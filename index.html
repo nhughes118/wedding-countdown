@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Savannah & Nicholas</title>
+  </head>
+  <body>
+  <!-- 2018-03-02 23:59:00 -->
+<!-- "Y-m-d H:i:s" -->
+<div id="daysUntil">
+  <div id="app">
+    <countdown date="2020-10-23 17:00:00"></countdown>
+  </div>
+
+
+  <template id="countdown-template">
+    <div class="countdown">
+      <div class="block">
+        <p class="digit">{{ days | two_digits }}</p>
+        <p class="text">Days</p>
+      </div>
+      <div class="block">
+        <p class="digit">{{ hours | two_digits }}</p>
+        <p class="text">Hours</p>
+      </div>
+      <div class="block">
+        <p class="digit">{{ minutes | two_digits }}</p>
+        <p class="text">Minutes</p>
+      </div>
+      <div class="block">
+        <p class="digit">{{ seconds | two_digits }}</p>
+        <p class="text">Seconds</p>
+      </div>
+    </div>
+  </template>
+</div>
+  </body>
+</html>
